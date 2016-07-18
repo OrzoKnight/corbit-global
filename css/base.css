@@ -15,14 +15,8 @@
  * $Components
  * $Overrides
  */
-/* ==========================================================================
-   $Global
-   ========================================================================== */
-html {
-  font-family: "Yantramanav", "Helvetica Neue", "Helvetica" sans-serif; }
-
 /* $Normalize
-   ========================================================================== */
+    ========================================================================== */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -30,7 +24,7 @@ html {
  *    user zoom.
  */
 html {
-  font-family: sans-serif;
+  font-family: "Yantramanav", "Helvetica Neue", Helvetica, sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -378,6 +372,12 @@ td,
 th {
   padding: 0; }
 
+/* ==========================================================================
+   $Global
+   ========================================================================== */
+h1, h2, h3 {
+  font-weight: 900; }
+
 /* $Grid
    ========================================================================== */
 body, html {
@@ -392,7 +392,18 @@ body, html {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
+
+.centered-content {
+  width: auto;
+  max-width: 1060px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
 
 .content {
   padding: 15px; }
@@ -589,16 +600,36 @@ a.btn {
 .hero-full-width {
   background: transparent url("../img/main-bg.jpg") center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
-  height: 900px;
+  height: 100%;
   position: relative; }
-  .hero-full-width h2 {
-    color: #222;
-    font-size: 40px;
-    font-weight: normal;
+  .hero-full-width .hero-content {
     position: absolute;
-    top: 40%;
-    left: 50px; }
+    bottom: 7%;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto; }
+    .hero-full-width .hero-content h2 {
+      color: #fff;
+      font-size: 3.157rem;
+      font-weight: 300;
+      text-shadow: 0 1px 3px #666;
+      line-height: 4.209rem; }
+    .hero-full-width .hero-content .button-main {
+      background: #fff;
+      border-radius: 3px;
+      color: #333;
+      font-size: 1.125rem;
+      padding: 10px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-transition: all, .2s ease-in-out;
+      transition: all, .2s ease-in-out; }
+      .hero-full-width .hero-content .button-main:hover {
+        background: rgba(255, 255, 255, 0.3);
+        color: #333;
+        text-shadow: none; }
 
 /* ==========================================================================
    $Components - Sections (like header, footer, sidebar, ect)
@@ -622,7 +653,11 @@ header.site-header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px; }
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100; }
 
 .brand {
   float: left;
