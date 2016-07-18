@@ -378,6 +378,9 @@ th {
 h1, h2, h3 {
   font-weight: 900; }
 
+h2 {
+  font-size: 2.369rem; }
+
 /* $Grid
    ========================================================================== */
 body, html {
@@ -606,7 +609,7 @@ a.btn {
   position: relative; }
   .hero-full-width .hero-content {
     position: absolute;
-    bottom: 7%;
+    top: 35%;
     text-align: center;
     width: 100%;
     margin: 0 auto; }
@@ -617,6 +620,8 @@ a.btn {
       text-shadow: 0 1px 3px #666;
       line-height: 4.209rem; }
     .hero-full-width .hero-content .button-main {
+      -webkit-animation-delay: 1s;
+              animation-delay: 1s;
       background: #fff;
       border-radius: 3px;
       color: #333;
@@ -628,8 +633,39 @@ a.btn {
       transition: all, .2s ease-in-out; }
       .hero-full-width .hero-content .button-main:hover {
         background: rgba(255, 255, 255, 0.3);
-        color: #333;
+        color: #fff;
         text-shadow: none; }
+
+.image-container {
+  margin: 25px auto; }
+  .image-container img {
+    max-width: 100%; }
+  .image-container.corbit-family {
+    width: 325px; }
+
+#icon-global {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s; }
+
+#icon-arcology {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s; }
+
+#icon-security {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s; }
+
+#icon-health {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s; }
+
+#icon-space {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s; }
+
+#icon-tech {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
 
 /* ==========================================================================
    $Components - Sections (like header, footer, sidebar, ect)
@@ -653,7 +689,7 @@ header.site-header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px;
+  height: 70px;
   position: absolute;
   top: 0;
   left: 0;
@@ -662,10 +698,10 @@ header.site-header {
 .brand {
   float: left;
   height: 100%;
-  margin: 25px; }
+  margin: 20px; }
 
 .main-logo {
-  width: 280px;
+  width: 250px;
   height: auto; }
 
 .header-nav {
@@ -686,7 +722,7 @@ header.site-header {
     padding: 0; }
   .header-nav ul li a {
     display: inline-block;
-    line-height: 80px;
+    line-height: 70px;
     padding: 0 30px;
     border-left: 1px solid #eee;
     text-decoration: none;
