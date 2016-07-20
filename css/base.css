@@ -35,7 +35,9 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.777rem; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -379,7 +381,8 @@ h1, h2, h3 {
   font-weight: 900; }
 
 h2 {
-  font-size: 2.369rem; }
+  font-size: 2.369rem;
+  color: #aaa; }
 
 /* $Grid
    ========================================================================== */
@@ -410,6 +413,22 @@ body, html {
 
 .content {
   padding: 15px; }
+
+.section-narrow {
+  width: auto;
+  max-width: 75%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 20px 0; }
+  .section-narrow h2 {
+    margin-bottom: 5px;
+    font-size: 1.999rem; }
+  .section-narrow object, .section-narrow img {
+    max-width: 50%; }
 
 .col-wrap {
   *zoom: 1; }
@@ -574,6 +593,10 @@ body, html {
       .three-quarters:last-child {
         margin-right: 0; } }
 
+.centered-text {
+  margin: 0 auto;
+  text-align: center; }
+
 /* $Globals - These high-level styles apply all across the site
    ========================================================================== */
 html {
@@ -667,6 +690,95 @@ a.btn {
   -webkit-animation-delay: 1s;
           animation-delay: 1s; }
 
+@media (min-width: 600px) {
+  .companies-grid .one-third {
+    text-align: left;
+    display: inline;
+    clear: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+    clear: none;
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0; }
+    .companies-grid .one-third:first-child {
+      margin-left: 0; }
+    .companies-grid .one-third:last-child {
+      margin-right: 0; }
+    .companies-grid .one-third:last-child {
+      margin-right: 0; } }
+
+@media (min-width: 800px) {
+  .companies-grid .one-third {
+    text-align: left;
+    display: inline;
+    clear: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+    clear: none;
+    width: 33.33333%;
+    margin-left: 0;
+    margin-right: 0; }
+    .companies-grid .one-third:first-child {
+      margin-left: 0; }
+    .companies-grid .one-third:last-child {
+      margin-right: 0; }
+    .companies-grid .one-third:last-child {
+      margin-right: 0; } }
+
+.company {
+  height: 26rem;
+  padding: 0; }
+  .company h2 {
+    color: #fff;
+    text-shadow: 0 1px 3px #333; }
+  .company .company-info {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .company .company-icon {
+    width: 32px;
+    height: auto; }
+    .company .company-icon + h2 {
+      margin-top: 30px;
+      font-size: 3.157rem; }
+  .company-arcology {
+    background: transparent url("../img/company-arcology-bg.jpg") center center no-repeat;
+    background-size: cover; }
+  .company-health {
+    background: transparent url("../img/company-health-bg.jpg") center center no-repeat;
+    background-size: cover; }
+  .company-tech {
+    background: transparent url("../img/company-tech-bg.jpg") center center no-repeat;
+    background-size: cover; }
+  .company-security {
+    background: transparent url("../img/company-security-bg.jpg") center center no-repeat;
+    background-size: cover; }
+  .company-space {
+    background: transparent url("../img/company-space-bg.jpg") center center no-repeat;
+    background-size: cover; }
+  .company-global {
+    background: transparent url("../img/company-global-bg.jpg") center center no-repeat;
+    background-size: cover; }
+
 /* ==========================================================================
    $Components - Sections (like header, footer, sidebar, ect)
    ========================================================================== */
@@ -731,8 +843,7 @@ header.site-header {
     transition: all .2s ease-in-out;
     margin: 0; }
     .header-nav ul li a:hover {
-      background: #45bbe1;
-      color: #fff; }
+      background: #eee; }
 
 /* ==========================================================================
    $Overrides

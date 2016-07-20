@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFCE00;}
+	.st1{fill:#FFFFFF;}
+</style>
+<rect class="st0" width="64" height="64"/>
+<g id="icon-security">
+	<path class="st1" d="M44.7,19.2v-6.4h-6.4H32h-6.3h-6.4v6.4h-6.4v6.4V32v6.4h6.4v6.4v6.4h6.4h6.4h6.4h6.4v-6.4v-6.4h6.4V32v-6.4
+		v-6.4C51.3,19.2,44.7,19.2,44.7,19.2z M44.7,31.9h-6.4H32h-6.3h-6.4v-6.4h6.4h6.4h6.4h6.4v6.4H44.7z"/>
+	<g>
+		<path class="st0" d="M57.3,0h-6.4h-6.4h-6.4h-6.3h-6.3h-6.4h-6.4H6.4H0v6.4v6.4v6.4v6.4V32v6.4v6.4v6.4v6.4V64h6.4h6.4h6.4h6.4H32
+			h6.4h6.4h6.4h6.4H64v-6.4v-6.4v-6.4v-6.4V32v-6.4v-6.4v-6.4V6.4V0H57.3L57.3,0z M51.1,25.5v6.4v6.4h-6.4v6.4v6.4h-6.4H32h-6.3
+			h-6.4v-6.4v-6.4h-6.4v-6.4v-6.4v-6.4h6.4v-6.4h6.4h6.4h6.4h6.4v6.4h6.4v6.4C51.3,25.5,51.1,25.5,51.1,25.5z"/>
+		<polygon class="st0" points="32,25.5 25.6,25.5 19.2,25.5 19.2,31.9 25.6,31.9 32,31.9 38.4,31.9 44.7,31.9 44.7,25.5 38.4,25.5 
+					"/>
+	</g>
+</g>
+</svg>
